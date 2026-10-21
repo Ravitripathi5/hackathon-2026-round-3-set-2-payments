@@ -1,0 +1,15 @@
+name: relay
+on: push
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: some-org/deploy-action@master
+      - name: debug
+        run: echo "secret=${{ secrets.WEBHOOK_SECRET }}"
+      - name: OIDC note
+        run: echo "trust sub repo:* accepted by deploy role"

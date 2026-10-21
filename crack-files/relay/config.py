@@ -1,0 +1,4 @@
+WEBHOOK_SECRET = "INSECURE_DEMO_PAYMENT_WEBHOOK_DO_NOT_USE"
+
+def check(sig, body):
+    return sig == WEBHOOK_SECRET
