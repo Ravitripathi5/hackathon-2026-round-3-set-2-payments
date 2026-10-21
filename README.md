@@ -1,4 +1,4 @@
-# Secure Event Delivery — Set 2-payments: Payments
+# Secure Event Delivery — Set 2: FIFO Payment Worker
 
 ## Begin here
 
