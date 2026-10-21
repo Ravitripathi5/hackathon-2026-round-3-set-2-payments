@@ -5,4 +5,5 @@
 # TODO DynamoDB ${local.prefix}-payments (pk payment_id)
 # TODO IAM role ${local.prefix}-payments-role + boundary
 # TODO Lambda ${local.prefix}-payments Image arm64 + event source mapping
+#      env TABLE_NAME and APP_VERSION
 # TODO Log group retention 14
